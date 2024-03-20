@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: radial-gradient(circle, #4a90e2, #69e6ff); /* Radial gradient from blue to light blue */
+  color: #ffffff; /* Light text color */
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+input[type="number"] {
+  border: none;
+  background-color: #272727; /* Dark background for input */
+  color: #ffffff; /* White text color for input */
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  width: 200px;
+}
+
+output {
+  background-color: #272727; /* Dark background for output */
+  color: #69e6ff; /* Neon blue text color for output */
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+button {
+  background-color: #69e6ff;
+  color: #1a1a1a;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #37c1e5;
+}
+input[type="number"]:focus {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+button {
+  background-color: #69e6ff;
+  color: #1a1a1a;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(to right, #69e6ff, #37c1e5);
+  color: #fff;
+}
+
+body {
+  /* Add a subtle animation to the background gradient */
+  animation: gradientAnimation 20s infinite;
+}
+
+@keyframes gradientAnimation {
+  0% { background: radial-gradient(circle, #4a90e2, #69e6ff); }
+  50% { background: radial-gradient(circle, #69e6ff, #4a90e2); }
+  100% { background: radial-gradient(circle, #4a90e2, #69e6ff); }
+}
+
+/* Additional styles (optional) */
+
+body {
+  font-family: 'Poppins', sans-serif; /* Change to a futuristic font */
+}
+
+input[type="number"] {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow effect */
+}
+
+output {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a subtle shadow effect */
+}
+input[type="number"]:focus {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+  background-color: #0a2c5e; /* Dark blue background color on focus */
+}
